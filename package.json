@@ -1,0 +1,34 @@
+{
+  "name": "wakatobi-swagger",
+  "version": "1.0.0",
+  "description": "Swagger Docs support for Wakatobi Rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ardhi/wakatobi-swagger.git"
+  },
+  "keywords": [
+    "swagger",
+    "restapi",
+    "web",
+    "webserver",
+    "bajo",
+    "framework",
+    "fastify",
+    "modular"
+  ],
+  "author": "Ardhi Lukianto <ardhi@lukianto.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ardhi/wakatobi-swagger/issues"
+  },
+  "homepage": "https://github.com/ardhi/wakatobi-swagger#readme",
+  "dependencies": {
+    "@fastify/swagger": "^8.8.0",
+    "@fastify/swagger-ui": "^1.9.3"
+  }
+}
