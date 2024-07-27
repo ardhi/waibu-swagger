@@ -1,6 +1,6 @@
 # wakatobi-swagger
 
-Plugin name: **wakatobiSwagger**, alias: **swagger**
+Plugin name: **wakatobiSwagger**, alias: **wktbswagger**
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/ardhi/wakatobi-swagger) ![NPM Version](https://img.shields.io/npm/v/wakatobi-swagger)
 
