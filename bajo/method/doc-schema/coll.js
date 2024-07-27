@@ -9,7 +9,7 @@ function getType (input) {
 }
 
 async function buildPropsReqs ({ schema, method, options = {} }) {
-  const { getSchema } = this.app.bajoDb
+  const { getSchema } = this.app.dobo
   const properties = {}
   const required = []
   const rels = {}
@@ -111,7 +111,7 @@ async function buildResponse ({ ctx, schema, method, options }) {
 }
 
 async function docSchemaColl ({ coll, method, ctx, options = {} }) {
-  const { getInfo } = this.app.bajoDb
+  const { getInfo } = this.app.dobo
   const { schema } = getInfo(coll)
   const { omit } = this.app.bajo.lib._
   const out = {
