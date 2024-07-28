@@ -1,22 +1,22 @@
-# wakatobi-swagger
+# waibu-swagger
 
-Plugin name: **wakatobiSwagger**, alias: **wktbswagger**
+Plugin name: **waibuSwagger**, alias: **wbswagger**
 
-![GitHub package.json version](https://img.shields.io/github/package-json/v/ardhi/wakatobi-swagger) ![NPM Version](https://img.shields.io/npm/v/wakatobi-swagger)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/ardhi/waibu-swagger) ![NPM Version](https://img.shields.io/npm/v/waibu-swagger)
 
 > <br />**Attention**: I do NOT accept any pull request at the moment, thanks!<br /><br />
 
-Swagger doc support for [wakatobi-rest-api](https://github.com/ardhi/wakatobi-rest-api)
+Swagger doc support for [waibu-rest-api](https://github.com/ardhi/waibu-rest-api)
 
 ## Installation
 
 Goto your ```<bajo-base-dir>``` and type:
 
 ```bash
-$ npm install wakatobi-swagger
+$ npm install waibu-swagger
 ```
 
-Now open your ```<bajo-data-dir>/config/.plugins``` and put ```wakatobi-swagger``` in it
+Now open your ```<bajo-data-dir>/config/.plugins``` and put ```waibu-swagger``` in it
 
 ## License
 
