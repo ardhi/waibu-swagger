@@ -1,7 +1,7 @@
 async function buildErrResp (ctx) {
   const { cloneDeep, merge, each, get } = this.app.bajo.lib._
   const cfg = this.config
-  const cfgWeb = this.app.wakatobi.config
+  const cfgWeb = this.app.waibu.config
   const def = {
     type: 'object',
     properties: {

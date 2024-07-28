@@ -1,7 +1,7 @@
 import swagger from '@fastify/swagger'
 import swaggerUi from '@fastify/swagger-ui'
 
-async function wakatobiRestApiBeforeCreateRoutes (ctx) {
+async function waibuRestApiBeforeCreateRoutes (ctx) {
   this.log.debug('Rest API documentation is running')
   await this.docSchemaGeneral(ctx)
   const { cloneDeep } = this.app.bajo.lib._
@@ -15,4 +15,4 @@ async function wakatobiRestApiBeforeCreateRoutes (ctx) {
   await ctx.register(swaggerUi, optsUi)
 }
 
-export default wakatobiRestApiBeforeCreateRoutes
+export default waibuRestApiBeforeCreateRoutes

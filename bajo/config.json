@@ -1,5 +1,5 @@
 {
-  "alias": "wktbswagger",
+  "alias": "wbswagger",
   "swagger": {
     "openapi": {
       "info": {
@@ -26,5 +26,5 @@
       "title": "API Documentation"
     }
   },
-  "dependencies": ["wakatobi-rest-api"]
+  "dependencies": ["waibu-rest-api"]
 }

@@ -46,8 +46,8 @@ async function buildPropsReqs ({ schema, method, options = {} }) {
 
 async function buildResponse ({ ctx, schema, method, options }) {
   const { merge, cloneDeep } = this.app.bajo.lib._
-  const { transformResult } = this.app.wakatobiRestApi
-  const cfgWeb = this.app.wakatobi.config
+  const { transformResult } = this.app.waibuRestApi
+  const cfgWeb = this.app.waibu.config
   const { properties } = await buildPropsReqs.call(this, { schema, method, options })
 
   async function buildData (keys) {
