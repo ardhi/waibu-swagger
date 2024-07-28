@@ -53,7 +53,7 @@ async function buildResponse ({ ctx, schema, method, options }) {
   async function buildData (keys) {
     const data = {}
     for (const k of keys) {
-      const name = 'coll' + schema.name
+      const name = 'model' + schema.name
       const props = cloneDeep(properties)
       await this.docSchemaLib(ctx, name, {
         type: 'object',
@@ -80,7 +80,7 @@ async function buildResponse ({ ctx, schema, method, options }) {
     description: this.print.write('General error response'),
     $ref: '5xxResp#'
   }
-  if (cfgWeb.dbColl.dataOnly) {
+  if (cfgWeb.dbModel.dataOnly) {
     if (method === 'find') {
       result['2xx'] = {
         type: 'array',
@@ -110,9 +110,9 @@ async function buildResponse ({ ctx, schema, method, options }) {
   return result
 }
 
-async function docSchemaColl ({ coll, method, ctx, options = {} }) {
+async function docSchemaModel ({ model, method, ctx, options = {} }) {
   const { getInfo } = this.app.dobo
-  const { schema } = getInfo(coll)
+  const { schema } = getInfo(model)
   const { omit } = this.app.bajo.lib._
   const out = {
     description: options.description ?? this.docSchemaDescription(method),
@@ -127,7 +127,7 @@ async function docSchemaColl ({ coll, method, ctx, options = {} }) {
   }
   if (['update'].includes(method)) {
     const { properties } = await buildPropsReqs.call(this, { schema, method, options })
-    const name = 'coll' + schema.name + 'Update'
+    const name = 'model' + schema.name + 'Update'
     delete properties._rel
     await this.docSchemaLib(ctx, name, {
       type: 'object',
@@ -137,7 +137,7 @@ async function docSchemaColl ({ coll, method, ctx, options = {} }) {
   }
   if (['replace'].includes(method)) {
     const { properties, required } = await buildPropsReqs.call(this, { schema, method, options })
-    const name = 'coll' + schema.name + 'Replace'
+    const name = 'model' + schema.name + 'Replace'
     delete properties._rel
     await this.docSchemaLib(ctx, name, {
       type: 'object',
@@ -148,7 +148,7 @@ async function docSchemaColl ({ coll, method, ctx, options = {} }) {
   }
   if (['create'].includes(method)) {
     const { properties, required } = await buildPropsReqs.call(this, { schema, method, options })
-    const name = 'coll' + schema.name + 'Create'
+    const name = 'model' + schema.name + 'Create'
     delete properties._rel
     await this.docSchemaLib(ctx, name, {
       type: 'object',
@@ -162,4 +162,4 @@ async function docSchemaColl ({ coll, method, ctx, options = {} }) {
   return out
 }
 
-export default docSchemaColl
+export default docSchemaModel
