@@ -3,7 +3,6 @@ import swaggerUi from '@fastify/swagger-ui'
 
 async function waibuRestApiBeforeCreateRoutes (ctx) {
   this.log.debug('Rest API documentation is running')
-  await this.docSchemaGeneral(ctx)
   const { cloneDeep } = this.app.bajo.lib._
   const opts = cloneDeep(this.config.swagger)
   const optsUi = cloneDeep(this.config.swaggerUi)
