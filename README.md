@@ -1,6 +1,6 @@
 # waibu-swagger
 
-Plugin name: **waibuSwagger**, alias: **wbswagger**
+Plugin name: **waibuSwagger**, alias: **wswagger**
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/ardhi/waibu-swagger) ![NPM Version](https://img.shields.io/npm/v/waibu-swagger)
 
