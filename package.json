@@ -1,6 +1,6 @@
 {
   "name": "waibu-swagger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Swagger Docs support for Waibu Rest API",
   "main": "index.js",
   "scripts": {

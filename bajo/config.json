@@ -24,6 +24,5 @@
     "theme": {
       "title": "API Documentation"
     }
-  },
-  "dependencies": ["waibu-rest-api"]
+  }
 }
