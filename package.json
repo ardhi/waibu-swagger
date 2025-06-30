@@ -1,12 +1,15 @@
 {
   "name": "waibu-swagger",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Swagger Docs support for Waibu Rest API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
+  "bajo": {
+    "type": "plugin"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ardhi/waibu-swagger.git"
