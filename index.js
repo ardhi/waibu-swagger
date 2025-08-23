@@ -1,7 +1,7 @@
 async function factory (pkgName) {
   const me = this
 
-  return class WaibuSwagger extends this.lib.BajoPlugin {
+  return class WaibuSwagger extends this.lib.Plugin {
     constructor () {
       super(pkgName, me.app)
       this.alias = 'wswagger'
