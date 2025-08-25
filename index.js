@@ -1,11 +1,12 @@
 async function factory (pkgName) {
   const me = this
 
-  return class WaibuSwagger extends this.lib.Plugin {
+  class WaibuSwagger extends this.lib.Plugin {
+    static alias = 'wswagger'
+    static dependencies = ['waibu-rest-api']
+
     constructor () {
       super(pkgName, me.app)
-      this.alias = 'wswagger'
-      this.dependencies = ['waibu-rest-api']
       this.config = {
         swagger: {
           openapi: {
@@ -36,6 +37,8 @@ async function factory (pkgName) {
       }
     }
   }
+
+  return WaibuSwagger
 }
 
 export default factory
