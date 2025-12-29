@@ -12,7 +12,7 @@ async function factory (pkgName) {
    *
    * @class
    */
-  class WaibuSwagger extends this.app.pluginClass.base {
+  class WaibuSwagger extends this.app.baseClass.Base {
     static alias = 'wswagger'
     static dependencies = ['waibu-rest-api']
 

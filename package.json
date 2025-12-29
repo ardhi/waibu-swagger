@@ -1,6 +1,6 @@
 {
   "name": "waibu-swagger",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Swagger Docs support for Waibu Rest API",
   "main": "index.js",
   "scripts": {
@@ -33,8 +33,8 @@
   },
   "homepage": "https://github.com/ardhi/waibu-swagger#readme",
   "dependencies": {
-    "@fastify/swagger": "^8.8.0",
-    "@fastify/swagger-ui": "^1.9.3"
+    "@fastify/swagger": "^9.6.1",
+    "@fastify/swagger-ui": "^5.2.3"
   },
   "devDependencies": {
     "clean-jsdoc-theme": "^4.3.0",

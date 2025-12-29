@@ -8,8 +8,8 @@ async function waibuRestApiBeforeCreateRoutes (ctx) {
   const optsUi = cloneDeep(this.config.swaggerUi)
   if (!optsUi.transformStaticCSP) optsUi.transformStaticCSP = (header) => header
   if (!optsUi.transformSpecification) optsUi.transformSpecification = (obj, req, reply) => (obj)
-  if (!opts.openapi.info.version) opts.openapi.info.version = this.config.pkg.version
-  if (!opts.openapi.info.description) opts.openapi.info.description = this.config.pkg.description
+  if (!opts.openapi.info.version) opts.openapi.info.version = this.pkg.version
+  if (!opts.openapi.info.description) opts.openapi.info.description = this.pkg.description
   await ctx.register(swagger, opts)
   await ctx.register(swaggerUi, optsUi)
 }
